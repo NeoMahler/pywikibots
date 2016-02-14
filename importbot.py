@@ -55,9 +55,10 @@ def pagetext(pagetitle):
     newtext = newtext.replace('{{', '<!-- TEMPLATE: {{').replace('}}', '}} END of template -->')
     print("\n\nMODIFIED TEXT WITH COMMENTED TEMPLATES:\n")
     print(newtext)
-    editlotr(newtext, pagetitle)
+    createpage(newtext, pagetitle)
     
-def editlotr(text, title):
+def createpage(text, title):
+    """ Creates the page """
     site = pwb.Site()
     page = pwb.Page(site, title)
     if page.text != '':

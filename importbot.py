@@ -21,8 +21,8 @@ sys.setdefaultencoding('utf8')
 ##################################
 
 categoria = None # The category from where you want to copy the articles
-wiki = "https://ca.wikipedia.org/" # url of the wiki from where articles will be copied. Include the http:// and the final /!
-catname = "Categoria:" # Local name of the Category namespace
+wiki = "https://en.wikipedia.org/" # url of the wiki from where articles will be copied. Include the http:// and the final /!
+catname = "Category:" # Local name of the Category namespace
 
 ################################
 ## DON'T TOUCH ANYTHING ELSE! ##

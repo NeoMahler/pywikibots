@@ -55,7 +55,12 @@ def pagetext(pagetitle):
     newtext = newtext.replace('{{', '<!-- TEMPLATE: {{').replace('}}', '}} END of template -->')
     print("\n\nMODIFIED TEXT WITH COMMENTED TEMPLATES:\n")
     print(newtext)
-    createpage(newtext, pagetitle)
+    confirm = raw_input("Do you want to publish this page? ([y]es/[n]o) ")
+    if confirm.startswith(("y", "Y")):
+        createpage(newtext, pagetitle)
+    else:
+        print("Avorted")
+        return
     
 def createpage(text, title):
     """ Creates the page """
